@@ -13,13 +13,13 @@ const MailboxList = (props) => {
         <>
             <h1>Mailboxes</h1>
             <ul>
-                {props.mailboxes.map((currentMailbox) => {
-                    <li key={currentMailbox._id}>
+                {props.mailboxes.map((currentMailbox) => (
+                    <li key={currentMailbox._id} className="mail-box">
                         <Link to={`/mailboxes/${currentMailbox._id}`}>
-                            {currentMailbox.boxSize}
+                            Mailbox: {currentMailbox._id}
                         </Link>
                     </li>
-                })}
+                ))}
             </ul>
         </>
     )

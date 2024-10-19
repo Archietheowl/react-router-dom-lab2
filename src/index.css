@@ -78,7 +78,11 @@ li {
 }
 
 .mail-box {
-  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  height: 80px;
+  width: 80px;
   padding: 20px;
 }
 
